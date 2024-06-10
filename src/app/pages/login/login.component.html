@@ -1,0 +1,35 @@
+<div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="row w-100">
+      <div class="col-md-6 d-none d-md-block p-0 img-container">
+        <img src="assets/images/standup-meeting.jpg" class="img-fluid full-height" alt="Login Image">
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center form-container">
+       
+          <div class="card-body form-container">
+            <h3 class="card-title text-center mb-4">Welcome to DevPulse</h3>
+            <p class="text-center mb-4">Streamline Your Daily Stand-Ups and Boost Team Productivity!</p>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary" routerLink="/dashboard">Login</button>
+              </div>
+              <div class="d-grid">
+                <button type="button" class="btn btn-outline-danger">
+                  <i class="fab fa-google me-2"></i> Continue with Google
+                </button>
+              </div>
+            </form>
+            <p class="text-center mt-3">Don't have an account? <a routerLink="/register">Register</a></p>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  
