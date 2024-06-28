@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './componets/navbar/navbar.component';
 import { DashboardComponent } from './componets/dashboard/dashboard.component';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { environment } from 'src/environments/environment.development';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +20,9 @@ import { DashboardComponent } from './componets/dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
