@@ -1,9 +1,13 @@
-.container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.h{
-    height: 200px;
-    width: 500px;
-}
+.container {
+    max-width: 800px;
+  }
+  .card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .h-64 {
+    height: 16rem;
+  }
+  

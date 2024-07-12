@@ -8,7 +8,6 @@ import firebase from 'firebase/compat/app';
   providedIn: 'root'
 })
 export class AuthService {
-
   constructor(private afAuth: AngularFireAuth, private router: Router) {
     if (!firebase.apps.length) {
       console.log('Initializing Firebase');
